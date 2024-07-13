@@ -1,0 +1,155 @@
+{
+    "menu_items": {
+        "vegetarian": [
+            {
+                "item": "Paneer Tikka Masala",
+                "item_price": 220.00,
+                "ingredients": {
+                    "Paneer Packets": 1,
+                    "Tomato Gravy Packet": 1,
+                    "Cream": 1
+                },
+                "img": "/static/images/menus/lunch/paneer_tikka_masala.jpg"
+            },
+            {
+                "item": "Dal Makhani",
+                "item_price": 180.00,
+                "ingredients": {
+                    "Black Lentils (Urad Dal) Packet": 1,
+                    "Red Kidney Beans (Rajma) Packet": 1,
+                    "Cream": 1
+                },
+                "img": "/static/images/menus/lunch/dal_makhani.jpg"
+            },
+            {
+                "item": "Vegetable Pulao",
+                "item_price": 200.00,
+                "ingredients": {
+                    "Basmati Rice Packet": 1,
+                    "Mixed Vegetables Packet": 1
+                },
+                "img": "/static/images/menus/lunch/vegetable_pulao.jpg"
+            },
+            {
+                "item": "Chole Bhature",
+                "item_price": 180.00,
+                "ingredients": {
+                    "Chickpeas (Chole) Packet": 1,
+                    "Fried Bread (Bhature)": 2,
+                    "Onions": 1
+                },
+                "img": "/static/images/menus/lunch/chole_bhature.jpg"
+            },
+            {
+                "item": "Palak Paneer",
+                "item_price": 210.00,
+                "ingredients": {
+                    "Paneer Packets": 1,
+                    "Spinach Gravy Packet": 1,
+                    "Cream": 1
+                },
+                "img": "/static/images/menus/lunch/palak_paneer.jpg"
+            },
+            {
+                "item": "Aloo Gobi",
+                "item_price": 180.00,
+                "ingredients": {
+                    "Potatoes": 1,
+                    "Cauliflower": 1,
+                    "Spices": "Turmeric, Cumin"
+                },
+                "img": "/static/images/menus/lunch/aloo_gobi.jpg"
+            },
+            {
+                "item": "Naan",
+                "item_price": 30.00,
+                "ingredients": {
+                    "Naan Bread": 1
+                },
+                "img": "/static/images/menus/lunch/naan.jpg"
+            },
+            {
+                "item": "Roti",
+                "item_price": 15.00,
+                "ingredients": {
+                    "Roti": 1
+                },
+                "img": "/static/images/menus/lunch/roti.jpg"
+            }
+        ],
+        "non_vegetarian": [
+            {
+                "item": "Butter Chicken",
+                "item_price": 240.00,
+                "ingredients": {
+                    "Chicken Pieces": 1,
+                    "Tomato Gravy Packet": 1,
+                    "Butter": 1,
+                    "Cream": 1
+                },
+                "img": "/static/images/menus/lunch/butter_chicken.jpg"
+            },
+            {
+                "item": "Chicken Tikka",
+                "item_price": 230.00,
+                "ingredients": {
+                    "Chicken Tikka Pieces": 1
+                },
+                "img": "/static/images/menus/lunch/chicken_tikka.jpg"
+            },
+            {
+                "item": "Mutton Rogan Josh",
+                "item_price": 280.00,
+                "ingredients": {
+                    "Mutton Pieces": 1,
+                    "Rogan Josh Gravy Packet": 1
+                },
+                "img": "/static/images/menus/lunch/mutton_rogan_josh.jpeg"
+            },
+            {
+                "item": "Chicken Angara",
+                "item_price": 260.00,
+                "ingredients": {
+                    "Chicken Pieces": 1,
+                    "Spicy Gravy": 1
+                },
+                "img": "/static/images/menus/lunch/chicken_angara.jpeg"
+            },
+            {
+                "item": "Chicken Tandoori",
+                "item_price": 240.00,
+                "ingredients": {
+                    "Chicken (Tandoori Style)": 1
+                },
+                "img": "/static/images/menus/lunch/chicken_tandoori.jpeg"
+            },
+            {
+                "item": "Chicken Reshmi Kabab",
+                "item_price": 250.00,
+                "ingredients": {
+                    "Chicken Pieces": 1,
+                    "Marination": 1
+                },
+                "img": "/static/images/menus/lunch/chicken_reshmi_kabab.jpeg"
+            },
+            {
+                "item": "Chicken Lollipop",
+                "item_price": 270.00,
+                "ingredients": {
+                    "Chicken Wings": 1,
+                    "Marination": 1
+                },
+                "img": "/static/images/menus/lunch/chicken_lollipop.jpg"
+            },
+            {
+                "item": "Fish Curry",
+                "item_price": 260.00,
+                "ingredients": {
+                    "Fish Pieces": 1,
+                    "Curry Gravy Packet": 1
+                },
+                "img": "/static/images/menus/lunch/fish_curry.jpeg"
+            }
+        ]
+    }
+}

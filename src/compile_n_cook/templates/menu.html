@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+
+{% block title %}Compile and Cook | Menu | {% endblock %}
+
+{% block content %}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="static/css/menu.css">
+    <body class>
+    <div class="manupage">
+        <section id="menunav">
+            
+            <div class="container1">
+                <div class="row">
+                    <div class="col-12 intro-text">
+                        <h1>Explore menu</h1>
+                        <p>Compile and Cook is a modern fusion restaurant that
+                            brings together the art of culinary creativity and
+                            technological innovation. Located in the heart of
+                            downtown, this unique dining establishment offers a
+                            experience where gourmet cuisine meets cutting-edge
+                            technology. <br>
+                            <hr>
+                            since 2023
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="searchbar">
+                <div class="wrap-input-3">
+                    <input class="input" type="text"
+                        placeholder="Search Your Craving Here">
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+
+        </section>
+        </div>
+        <div class="container">
+            <header>
+                <h1 style="text-align:center!important;"> Grab Your Food , Order  Now !</h1>
+                <div class="shopping">
+                    <img src="static/images/menus/shopping.svg">
+                    <span class="quantity">0</span>
+                </div>
+
+            </header>
+        </div>
+
+        <!-- Navigation Pills for Menu Categories -->
+        <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab"
+            role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-breakfast-veg-tab"
+                    data-toggle="pill" href="#pills-breakfast-veg" role="tab"
+                    aria-controls="pills-breakfast-veg" aria-selected="true"
+                    onclick="displayMenu(breakfastVegetarian, 'Breakfast Vegetarian')">Breakfast
+                    Vegetarian</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-breakfast-bev-tab"
+                    data-toggle="pill" href="#pills-breakfast-bev" role="tab"
+                    aria-controls="pills-breakfast-bev" aria-selected="false"
+                    onclick="displayMenu(breakfastBeverages, 'Breakfast Beverages')">Breakfast
+                    Beverages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-lunch-veg-tab" data-toggle="pill"
+                    href="#pills-lunch-veg" role="tab"
+                    aria-controls="pills-lunch-veg" aria-selected="false"
+                    onclick="displayMenu(lunchVegetarian, 'Lunch Vegetarian')">Lunch
+                    Vegetarian</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-lunch-nonveg-tab"
+                    data-toggle="pill" href="#pills-lunch-nonveg" role="tab"
+                    aria-controls="pills-lunch-nonveg" aria-selected="false"
+                    onclick="displayMenu(lunchNonVegetarian, 'Lunch Non-Vegetarian')">Lunch
+                    Non-Vegetarian</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-dessert-tab" data-toggle="pill"
+                    href="#pills-dessert" role="tab"
+                    aria-controls="pills-dessert" aria-selected="false"
+                    onclick="displayMenu(dessertIndia, 'Indian Desserts')">Indian Desserts</a>
+            </li>
+        </ul>
+
+        <!-- Product List -->
+        <div class="list" id="product-list"></div>
+     <!-- Cart -->
+        <div class="card">
+            <h1>Cart</h1>
+            <ul class="listCard">
+            </ul>
+            <div class="checkOut">
+                <div class="total">0</div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div>
+
+        <!-- Include Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+
+        <script type="text/javascript">
+            let list = document.querySelector('.list');
+            let listCard = document.querySelector('.listCard');
+            let total = document.querySelector('.total');
+            let quantity = document.querySelector('.quantity');
+        
+            // The left Card bar . OPEN \ Close Function
+            let openShopping = document.querySelector('.shopping');
+            let closeShopping = document.querySelector('.closeShopping');
+            let body = document.querySelector('body');
+            openShopping.addEventListener('click', () => {
+                body.classList.add('active');
+            });
+        
+            closeShopping.addEventListener('click', () => {
+                body.classList.remove('active');
+            });
+        
+            // Pass Jinja data to JavaScript by embedding it in a script tag
+            const breakfastVegetarian = {{ b_veg|tojson }};
+            const breakfastBeverages = {{ b_bev|tojson }};
+            const lunchVegetarian = {{ l_veg|tojson }};
+            const lunchNonVegetarian = {{ l_nveg|tojson }};
+            const dessertIndia = {{ dessert|tojson }};
+            let listCards = [];
+        
+            function displayMenu(items, menuTitle) {
+                const menu = document.getElementById('product-list');
+                menu.innerHTML = '';
+                items.forEach((value, key) => {
+                    let newDiv = document.createElement('div');
+                    newDiv.classList.add('item');
+                    newDiv.innerHTML = `
+                        <img src="${value.img}" alt="${value.item}">
+                        <div class="title">${value.item}</div>
+                        <div class="price">$${parseFloat(value.item_price).toLocaleString()}</div>
+                        <button onclick="addToCart(${key}, '${menuTitle}')">Add To Cart</button>`;
+                    menu.appendChild(newDiv);
+                });
+            }
+
+            function addToCart(key, category) {
+                let item;
+                switch (category) {
+                    case 'Breakfast Vegetarian':
+                        item = breakfastVegetarian[key];
+                        break;
+                    case 'Breakfast Beverages':
+                        item = breakfastBeverages[key];
+                        break;
+                    case 'Lunch Vegetarian':
+                        item = lunchVegetarian[key];
+                        break;
+                    case 'Lunch Non-Vegetarian':
+                        item = lunchNonVegetarian[key];
+                        break;
+                    case 'Indian Desserts':
+                        item = dessertIndia[key];
+                        break;
+                }
+
+                if (listCards[key] == null) {
+                    listCards[key] = JSON.parse(JSON.stringify(item));
+                    listCards[key].quantity = 1;
+                } else {
+                    listCards[key].quantity++;
+                }
+                reloadCart();
+            }
+
+            function reloadCart() {
+                // Clear current content
+                listCard.innerHTML = ''; 
+                let totalPrice = 0;
+                let totalQuantity = 0;
+                listCards.forEach((item, index) => {
+                    if (item != null) {
+                        let newDiv = document.createElement('div');
+                        newDiv.classList.add('cart-item');
+                        newDiv.innerHTML = `
+                            <div class="title">${item.item}</div>
+                            <div class="quantity">Quantity: ${item.quantity}</div>
+                            <div class="price">Price: $${parseFloat(item.item_price * item.quantity).toLocaleString()}</div>
+                        `;
+                        listCard.appendChild(newDiv);
+                        totalPrice += item.item_price * item.quantity;
+                        totalQuantity += item.quantity;
+                    }
+                });
+                total.innerHTML = `Total: $${totalPrice.toLocaleString()}`;
+                quantity.innerHTML = totalQuantity;
+            }
+
+            // Initialize the application with one category (example)
+            displayMenu(breakfastVegetarian, 'Breakfast Vegetarian');
+        </script>
+           
+    </body>
+
+
+{% endblock %}

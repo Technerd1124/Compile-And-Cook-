@@ -1,0 +1,123 @@
+{
+    "menu_items": {
+        "indian_desserts": [
+            {
+                "item": "Gulab Jamun",
+                "item_price": 60,
+                "ingredients": {
+                    "Khoya": 1,
+                    "Sugar Syrup": 1
+                },
+                "img": "/static/images/menus/dessert/gulabjamun.jpg"
+            },
+            {
+                "item": "Rasgulla",
+                "item_price": 50,
+                "ingredients": {
+                    "Paneer": 1,
+                    "Sugar Syrup": 1
+                },
+                "img": "/static/images/menus/dessert/rasgullas.jpg"
+            },
+            {
+                "item": "Jalebi",
+                "item_price": 40,
+                "ingredients": {
+                    "Flour": 1,
+                    "Sugar Syrup": 1
+                },
+                "img": "/static/images/menus/dessert/jalebi.jpg"
+            },
+            {
+                "item": "Kheer",
+                "item_price": 70,
+                "ingredients": {
+                    "Rice": 1,
+                    "Milk": 1,
+                    "Sugar": 1
+                },
+                "img": "/static/images/menus/dessert/kheer.jpg"
+            },
+            {
+                "item": "Halwa",
+                "item_price": 60,
+                "ingredients": {
+                    "Semolina": 1,
+                    "Sugar": 1,
+                    "Ghee": 1,
+                    "Nuts": 1
+                },
+                "img": "/static/images/menus/dessert/halwa.jpg"
+            },
+            {
+                "item": "Barfi",
+                "item_price": 80,
+                "ingredients": {
+                    "Khoya": 1,
+                    "Sugar": 1,
+                    "Nuts": 1
+                },
+                "img": "/static/images/menus/dessert/barfi.jpg"
+            },
+            {
+                "item": "Ras Malai",
+                "item_price": 70,
+                "ingredients": {
+                    "Paneer": 1,
+                    "Milk": 1,
+                    "Sugar": 1,
+                    "Nuts": 1
+                },
+                "img": "/static/images/menus/dessert/Rasmalai.jpg"
+            },
+            {
+                "item": "Tiramisu",
+                "item_price": 90,
+                "ingredients": {
+                    "Ladyfingers": 1,
+                    "Mascarpone Cheese": 1,
+                    "Coffee": 1,
+                    "Cocoa Powder": 1
+                },
+                "img": "/static/images/menus/dessert/tiramisu.jpg"
+            },
+            {
+                "item": "Cheese Pastry",
+                "item_price": 60,
+                "ingredients": {
+                    "Pastry": 1,
+                    "Cheese": 1
+                },
+                "img": "/static/images/menus/dessert/cheese_pastry.jpg"
+            },
+            {
+                "item": "Donuts",
+                "item_price": 45,
+                "ingredients": {
+                    "Flour": 1,
+                    "Sugar": 1,
+                    "Oil": 1
+                },
+                "img": "/static/images/menus/dessert/donuts.jpg"
+            },
+            {
+                "item": "Chocolate Pastry",
+                "item_price": 70,
+                "ingredients": {
+                    "Pastry": 1,
+                    "Chocolate": 1
+                },
+                "img": "/static/images/menus/dessert/chocolate_pastry.jpg"
+            },
+            {
+                "item": "Strawberry Pastry",
+                "item_price": 65,
+                "ingredients": {
+                    "Pastry": 1,
+                    "Strawberries": 1
+                },
+                "img": "/static/images/menus/dessert/strawberry_pastry.jpg"
+            }
+        ]
+    }
+}

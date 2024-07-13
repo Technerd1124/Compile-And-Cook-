@@ -1,0 +1,168 @@
+{
+    "menu_items": {
+            "vegetarian": [
+                {
+                    "item": "Masala Dosa",
+                    "item_price": 80,
+                    "ingredients": {
+                        "Dosa Batter": 1,
+                        "Potato Masala": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/masala_dosa.jpg"
+                },
+                {
+                    "item": "Idli Sambhar",
+                    "item_price": 60,
+                    "ingredients": {
+                        "Idli": 3,
+                        "Sambhar": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/idli_sambhar.jpg"
+                },
+                {
+                    "item": "Poha",
+                    "item_price": 50,
+                    "ingredients": {
+                        "Flattened Rice": 1,
+                        "Potatoes": 1,
+                        "Onions": 1,
+                        "Peanuts": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/poha.jpg"
+                },
+                {
+                    "item": "Upma",
+                    "item_price": 60,
+                    "ingredients": {
+                        "Semolina": 1,
+                        "Mixed Vegetables": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/upma.jpg"
+                },
+                {
+                    "item": "Aloo Paratha",
+                    "item_price": 70,
+                    "ingredients": {
+                        "Wheat Flour": 1,
+                        "Potato Stuffing": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/1.jpg"
+                },
+                {
+                    "item": "Lassi",
+                    "item_price": 70,
+                    "ingredients": {
+                        "curd": 2
+                    },
+                    "img": "/static/images/menus/Breakfast/Lassi.jpg"
+                },
+                {
+                    "item": "Medu Vada",
+                    "item_price": 50,
+                    "ingredients": {
+                        "Urad Dal Batter": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/vada_idli.jpg"
+                },
+                {
+                    "item": "Samosa",
+                    "item_price": 40,
+                    "ingredients": {
+                        "Pastry": 1,
+                        "Potato Filling": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/samosa.jpg"
+                },
+                {
+                    "item": "Vada Pav",
+                    "item_price": 50,
+                    "ingredients": {
+                        "Pav Bread": 1,
+                        "Vada (Potato Fritter)": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/vada-pav.jpg"
+                },
+                {
+                    "item": "Egg Dosa",
+                    "item_price": 90,
+                    "ingredients": {
+                        "Dosa Batter": 1,
+                        "Egg": 1,
+                        "Potato Masala": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/Egg-Dosa.jpg"
+                },
+                {
+                    "item": "Chicken Stew with Appam",
+                    "item_price": 120,
+                    "ingredients": {
+                        "Appam Batter": 1,
+                        "Chicken": 1,
+                        "Sambhar": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/kerala-chicken-stew.jpeg"
+                },
+                {
+                    "item": "Keema Paratha",
+                    "item_price": 100,
+                    "ingredients": {
+                        "Wheat Flour": 1,
+                        "Minced Meat": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/keema_paratha.jpeg"
+                },
+            
+                {
+                    "item": "Omelette",
+                    "item_price": 50,
+                    "ingredients": {
+                        "Egg": 2
+                    },
+                    "img": "/static/images/menus/Breakfast/ommlet.jpeg"
+                }
+            ],
+
+            "beverages": [
+                {
+                    "item": "Chai",
+                    "item_price": 20,
+                    "ingredients": {
+                        "Tea Leaves": 1,
+                        "Milk": 1,
+                        "Sugar": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/Masala-Chai-.jpg"
+                },
+                {
+                    "item": " Coffee",
+                    "item_price": 30,
+                    "ingredients": {
+                        "Coffee Powder": 1,
+                        "Milk": 1,
+                        "Sugar": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/coffee.jpeg"
+                },
+                {
+                    "item": "Fresh Juice",
+                    "item_price": 40,
+                    "ingredients": {
+                        "Fruits": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/fresh_juice.jpeg"
+                },
+                {
+                    "item": "Buttermilk",
+                    "item_price": 25,
+                    "ingredients": {
+                        "Curd": 1,
+                        "Water": 1,
+                        "Salt": 1
+                    },
+                    "img": "/static/images/menus/Breakfast/buttermilk.jpeg"
+                }
+            ]
+
+        }
+
+}

@@ -1,0 +1,139 @@
+
+
+
+.menu-items,
+.gallery-images,
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu-item,
+.gallery-images img,
+.feature {
+    flex: 1 1 calc(33.333% - 1rem);
+    box-sizing: border-box;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: auto;
+}
+
+#features {
+    background: #fcfcfc;
+    text-align: center;
+}
+
+#features .feature {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#features .feature img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#features .feature h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+#features .feature p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea,
+form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .menu-item,
+    .gallery-images img,
+    .feature {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+/* ========== Search got from,=== */
+
+.wrap-input-3 .input {
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border: 0;
+    padding: 12px 9px;
+    border-bottom: 1px solid #030303;
+    background-color: #f5f6fd;
+    text-align: center;
+}
+
+
+.wrap-input-3 .input:focus {
+    outline: none;
+}
+
+.wrap-input-3 {
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+.wrap-input-3 .input~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 99;
+}
+
+.wrap-input-3 .input~.focus-border:before,
+.wrap-input-3 .input~.focus-border:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:
+        #6c5dd3;
+    transition: 0.4s;
+}
+
+.wrap-input-3 .input~.focus-border:after {
+    left: auto;
+    right: 0;
+}
+
+.wrap-input-3 .input:focus~.focus-border:before,
+.wrap-input-3 .input:focus~.focus-border:after {
+    width: 50%;
+    transition: 0.4s;
+}

@@ -1,0 +1,279 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+
+}
+
+/* --- Logo  Sizing --- */
+#logo {
+    border: 1vh solid #aba583;
+    border-radius: 100%;
+    position: relative;
+    height: 79px;
+}
+
+/* navbar order online Button */
+
+.nav-link{
+    color: black !important;
+    font-size:larger !important; 
+    font-weight:600 !important;
+}
+.nav-link,a:hover{
+    border-bottom: 5px solid rgb(136, 16, 76);
+    transition: 1s ease-in;
+    font-size:large; 
+    font-weight:400 !important;
+}
+.btn-outline {
+    border: 3px solid #24292abf;
+    background: #55c2da;
+    padding: 1vh;
+    border-radius: 2vh;
+    width: 15%;
+
+}
+
+.caption { 
+    position: relative;
+    bottom: 30rem;
+    font-size: 3.3rem;
+    font-weight: 800;
+    font-family: poppins;
+    letter-spacing: 1vh;
+    font-stretch: semi-expanded;
+    color: #ffff;
+}
+
+/* Footer Styling  */
+/* --------- Contact US ------- */
+
+#contact {
+    border: 1vh solid rgba(239, 224, 224, 0.312);
+    position: relative;
+    top: 5vh;
+    color: #ffff;
+    width: auto;
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+    background-image: linear-gradient(to right, #33001b, #ff0084);
+
+
+    opacity: 0.9;
+
+
+}
+.connect {
+    position: relative;
+    border: 7px solid #fffefe02;
+    top: 5vh;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem;
+    /* background:#6effb5; */
+    /* background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); */
+    font-size: x-large;
+}
+
+.connect button {
+    background-color: white;
+    padding: .8rem;
+    box-shadow: 2px 4px 20px 7px #0d0c0cab;
+    border: none;
+    border-radius: 6.2rem;
+}
+
+.connect button:hover {
+    padding: 3vh;
+    transition: .6s ease-in;
+}
+
+.connect-text span {
+    font-weight: 500;
+    font-size: larger;
+
+}
+
+.connect-text h2 {
+    font-size: larger;
+}
+
+.base_footer {
+    background-color: rgba(255, 255, 255, 0.351) !important;
+    color: #fff !important;
+    border-top: 2ps gray;
+    position: relative;
+    top: 2vh;
+}
+
+.base_footer * {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+
+/*  Slider CSS */
+
+.slider {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    overflow: hidden;
+    color: white;
+
+}
+
+.carousel-item img {
+    opacity: 0.9;
+}
+
+#orderbtn {
+    position: relative;
+    list-style: none;
+
+}
+
+/* --- Menu Page CSS -- */
+.manupage {
+    border: 2px solid rgba(128, 0, 128, 0);
+    position: relative;
+    top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 11vh;
+    height: 60%;
+    gap: 20vh;
+
+}
+
+.container1 {
+    border: 2px solid rgba(238, 222, 222, 0.015);
+    position: relative;
+    top: 5vh;
+    text-align: center;
+    display: flex;
+    color: black;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4vh;
+    padding: 3vh;
+    margin: auto;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #fff;
+    top: 3vh;
+}
+
+
+.menubtn {
+    padding: 2vh;
+    width: auto;
+    border: none;
+
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#menunav {
+    /* border: 3px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+/* searchbar */
+
+.searchbar {
+    /* border: 3px solid #24292abf; */
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding: 3vh;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#searchin {
+    border-radius: 12%;
+}
+
+.wrap-input-3 .input {
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border: 0;
+    padding: 17px 0;
+    border-bottom: 1px solid #292323;
+    background-color: #ebecf3;
+    text-align: center;
+    box-shadow: 1px 1px 16px 5px #443d3d6b;
+}
+
+.wrap-input-3 .input:focus {
+    outline: none;
+}
+
+.wrap-input-3 {
+    width: 61%;
+    margin: 2%;
+    position: relative;
+}
+
+.wrap-input-3 .input~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 99;
+}
+
+.wrap-input-3 .input~.focus-border:before,
+.wrap-input-3 .input~.focus-border:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:
+        #6c5dd3;
+    transition: 0.4s;
+}
+
+.wrap-input-3 .input~.focus-border:after {
+    left: auto;
+    right: 0;
+}
+
+.wrap-input-3 .input:focus~.focus-border:before,
+.wrap-input-3 .input:focus~.focus-border:after {
+    width: 50%;
+    transition: 0.4s;
+}
+
+/* ==========  features Css ======== */
